@@ -81,10 +81,52 @@ body
     justify-content: space-around;
 }
 
+.screen-item{
+    z-index: 0;
+}
+
+.Onscreen-item{
+    position: relative;
+    z-index: -1;
+    background-color: #8900fa;
+}
+
 .screenOne img{
     transform: scaleX(-1);
     width: 90%;
     height: auto;
+}
+
+.s1{
+    position: relative;
+    height: 87%;
+    width: 65%;
+    bottom: 93%;
+    left: 23%;
+}
+
+.s2{
+    position: relative;
+    height: 87%;
+    width: 58%;
+    bottom: 93%;
+    left: 20%;
+}
+
+.s3{
+    position: relative;
+    height: 87%;
+    width: 65%;
+    top: 6%;
+    left: 13%;
+}
+
+.s4{
+    position: relative;
+    height: 87%;
+    width: 58%;
+    top: 6%;
+    left: 22%;
 }
 
 .screenTwo img{
@@ -103,6 +145,16 @@ body
     float: right;
     width: 80%;
     height: auto;
+}
+
+#testbg{
+    position: relative;
+    z-index: -1;
+    height: 87%;
+    width: 65%;
+    bottom: 93%;
+    left: 23%;
+    background-color: #8900fa;
 }
 
 .game
