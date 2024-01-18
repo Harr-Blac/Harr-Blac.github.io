@@ -17,4 +17,5 @@ function render()
 
     surface.drawImage(aim, aim.x, aim.y, aim.width, aim.height);
 	surface.drawImage(pit, pit.x, pit.y, pit.width, pit.height);
+    surface.drawImage(cntrscrn, cntrscrn.x, cntrscrn.y, cntrscrn.width, cntrscrn.height);
 }
