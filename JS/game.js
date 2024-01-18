@@ -14,4 +14,7 @@ function update()
 function render()
 {
 	surface.clearRect(0,0,canvas.width,canvas.height);
+
+    surface.drawImage(aim, aim.x, aim.y, aim.width, aim.height);
+	surface.drawImage(pit, pit.x, pit.y, pit.width, pit.height);
 }
