@@ -61,3 +61,61 @@ body
         opacity: 0;
     }
 }
+
+.screens-container{
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerL{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.containerR{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.screenOne img{
+    transform: scaleX(-1);
+    width: 90%;
+    height: auto;
+}
+
+.screenTwo img{
+    transform: scaleX(-1);
+    width: 80%;
+    height: auto;
+} 
+
+.screenThree img{
+    float: right;
+    width: 90%;
+    height: auto;
+}
+
+.screenFour img{
+    float: right;
+    width: 80%;
+    height: auto;
+}
+
+.game
+{
+    position:absolute;
+    display: flex;
+    height: 100vh;
+    width:100%;
+}
+
+.game canvas
+{
+    position:relative;
+    height: auto;
+    width:100%;
+}
