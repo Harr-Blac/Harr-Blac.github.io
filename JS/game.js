@@ -9,10 +9,8 @@ var gdone = true;
 window.addEventListener("keydown", onKeyDown);
 window.addEventListener("keyup", onKeyUp);
 
-const square = document.querySelector(".containerR");
-const circle = document.querySelector(".containerL");
-const btnHideSquare = document.querySelector(".btn-hide-square");
-const btnPulseCircle = document.querySelector(".btn-pulse-circle");
+const conR = document.querySelector(".containerR");
+const conL = document.querySelector(".containerL");
 
 var uInt;
 uInt = setInterval(update, 33.34);
@@ -22,8 +20,8 @@ function update()
 	render(); 
     if (gPressed == true && gdone == true)
 	{
-        square.classList.toggle("spreadOpenR");
-        circle.classList.toggle("spreadOpenL");
+        conR.classList.toggle("spreadOpenR");
+        conL.classList.toggle("spreadOpenL");
         gdone = false;
 	}
 }
