@@ -3,12 +3,49 @@ canvas.width = 1920;
 canvas.height = 947;
 var surface = canvas.getContext("2d");
 
+var gPressed = false;
+var gdone = true;
+
+window.addEventListener("keydown", onKeyDown);
+window.addEventListener("keyup", onKeyUp);
+
+const square = document.querySelector(".containerR");
+const circle = document.querySelector(".containerL");
+const btnHideSquare = document.querySelector(".btn-hide-square");
+const btnPulseCircle = document.querySelector(".btn-pulse-circle");
+
 var uInt;
 uInt = setInterval(update, 33.34);
 
 function update()
 {
 	render(); 
+    if (gPressed == true && gdone == true)
+	{
+        square.classList.toggle("spreadOpenR");
+        circle.classList.toggle("spreadOpenL");
+        gdone = false;
+	}
+}
+
+function onKeyDown(event)
+{
+	switch (event.keyCode)
+	{
+		case 71:
+			gPressed = true;
+			break;
+	} 
+}
+
+function onKeyUp(event)
+{
+	switch (event.keyCode)
+	{
+		case 71:
+			gPressed = false; 
+			break;
+	}
 }
 
 function render()

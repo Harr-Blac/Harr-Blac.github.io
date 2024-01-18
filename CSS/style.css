@@ -81,6 +81,45 @@ body
     justify-content: space-around;
 }
 
+.spreadOpenR{
+    animation: spreadR 1s linear forwards;
+}
+
+.spreadOpenL{
+    animation: spreadL 1s linear forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes spreadL {
+    0%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    10%{
+        transform: translate(-50px, 0px) rotate(5deg);
+    }
+    30%{
+        transform: translate(0px, -100px) rotate(-2deg);
+    }
+    100%{
+        transform: translate(-1000px, -100px) rotate(5deg) scaleX(0);
+    }
+}
+
+@keyframes spreadR {
+    0%{
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+    25%{
+        transform: translate(50px, 0px) rotate(-5deg);
+    }
+    50%{
+        transform: translate(0px, 100px) rotate(2deg);
+    }
+    100%{
+        transform: translate(1000px, -100px) rotate(-5deg) scaleX(0);
+    }
+}
+
 .screen-item{
     z-index: 0;
 }
